@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oyinkansola Closet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <img src="yinkasola_Logo.jpeg" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1 style="color:gold;">We give the best Quality products at affordable prices</h1>
+    
+</section>
+
+<!-- Shop Section -->
+<section id="shop" class="shop">
+    <h2>More Products</h2>
+    <div class="products">
+
+        <div class="product">
+            <img src="luxury_lingeries.jpeg">
+            <h3>Luxury Lingerie</h3>
+            <p>₦15,000</p>
+            <button onclick="addToCart('Luxury Lingerie',15000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="sexy_sleep_wear.jpeg">
+            <h3>Sexy Sleepwear</h3>
+            <p>₦12,000</p>
+            <button onclick="addToCart('Sexy Sleepwear',12000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="waist_strainer.jpeg">
+            <h3>Waist Trainer</h3>
+            <p>₦28,000</p>
+            <button onclick="addToCart('Waist Trainer',28000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="Towel_robe.jpeg">
+            <h3>Towel Robe</h3>
+            <p>₦20,000</p>
+            <button onclick="addToCart('Towel Robe',20000)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="quality thick towel.jpeg">
+            <h3>Quality Thick Towel</h3>
+            <p>₦20,000</p>
+            <button onclick="addToCart('Quality Thick Towel',20000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="sleep wear.jpeg">
+            <h3>Sexy Sleepwear</h3>
+            <p>₦18,000</p>
+            <button onclick="addToCart('Sexy Sleepwear',18000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="sexy_sleep_wear.jpeg">
+            <h3>sleep wear</h3>
+            <p>₦18,000</p>
+            <button onclick="addToCart('sleep wear',18000)">Add to order</button>
+        </div>
+
+          <div class="product">
+            <img src="waist_strainer.jpeg">
+            <h3>Waist Trainer</h3>
+            <p>₦10,500</p>
+            <button onclick="addToCart('Waist Trainer',10500)">Add to order</button>
+        </div>
+
+        <div class="product">
+          <video autoplay muted loop playsinline width="100%">
+            <source src="product image/waist strainer video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+           <h3> Waist Strainer</h3>
+             <p>₦32000</p>
+            <button onclick="addToCart('Waist Strainer',32000)">Add to order</button>
+       </div>
+
+        <div class="product">
+            <img src="waist strainer.jpeg">
+            <h3>Waist Strainer</h3>
+            <p>₦20,000</p>
+            <button onclick="addToCart('Waist Strainer',20000)">Add to order</button>
+        </div>
+
+
+         <div class="product">
+            <img src="waist strainer 2.jpeg">
+            <h3>Waist Strainer</h3>
+            <p>₦10,500</p>
+            <button onclick="addToCart('Waist Strainer',10500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="2in1 singlet.jpeg">
+            <h3>2 IN 1 Singlet</h3>
+            <p>₦18,000</p>
+            <button onclick="addToCart('2 IN 1 Singlet',18000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="3in1 quality singlet2.jpeg">
+            <h3>3 IN 1 Quality Singlet</h3>
+            <p>₦18,000</p>
+            <button onclick="addToCart('3 in 1 quality singlet',18000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="boxers.jpeg">
+            <h3>Boxers</h3>
+            <p>₦8,000</p>
+            <button onclick="addToCart('Boxers',8000)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="3in1 boxer.jpeg">
+            <h3>3 IN 1 Boxers</h3>
+            <p>₦8,500</p>
+            <button onclick="addToCart('3 in 1 boxers',8500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="3in1boxer_2.jpeg">
+            <h3>Boxers</h3>
+            <p>₦15,000</p>
+            <button onclick="addToCart('Boxers',15000)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="product image/white boxers 6500.jpeg">
+            <h3> White Boxers</h3>
+            <p>₦15,000</p>
+            <button onclick="addToCart(' White Boxers',6500)">Add to order</button>
+        </div>
+
+        <div class="product">
+          <video autoplay muted loop playsinline width="100%">
+            <source src="product image/condom boxers video 5900.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+           <h3> Condom Boxers</h3>
+             <p>₦5900</p>
+            <button onclick="addToCart('Condom Boxers',5900)">Add to order</button>
+       </div>
+
+        <div class="product">
+            <img src="product image/pant 3150.jpeg">
+            <h3>Quality pant</h3>
+            <p>₦3150</p>
+            <button onclick="addToCart('Quality pant',3150)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/pant2 1350.jpeg">
+            <h3>Pant</h3>
+            <p>₦1350</p>
+            <button onclick="addToCart('Pant',1350)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/pant4 2500.jpeg">
+            <h3>Pant</h3>
+            <p>₦2500</p>
+            <button onclick="addToCart(' Pant',2500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/pant5 1250.jpeg">
+            <h3>Quality pant</h3>
+            <p>₦1250</p>
+            <button onclick="addToCart('Quality pant',1250)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="quality bra.jpeg">
+            <h3>Quality Bra</h3>
+            <p>₦14,500</p>
+            <button onclick="addToCart('Quality Bra',14500)">Add to order</button>
+        </div>
+
+        <div class="product">
+          <video autoplay muted loop playsinline width="100%" controls poster="product image/bra2.jpeg">
+            <source src="product image/bra video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+           <h3> Available in different size and color</h3>
+             <p>₦6500</p>
+            <button onclick="addToCart('Condom Boxers',6500)">Add to order</button>
+       </div>
+
+        <div class="product">
+            <img src="product image/bra 6500.jpeg">
+            <h3>Quality Bra</h3>
+            <p>₦6500</p>
+            <button onclick="addToCart('Quality Bra',6500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/gown 9500.jpeg">
+            <h3>Quality gown</h3>
+            <p>₦9500</p>
+            <button onclick="addToCart('Quality gown',9500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/gown1 10500.jpeg">
+            <h3>Quality gown</h3>
+            <p>₦10500</p>
+            <button onclick="addToCart('Quality gown',10500)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="product image/gown2 13500.jpeg">
+            <h3>Quality gown</h3>
+            <p>₦13500</p>
+            <button onclick="addToCart('Quality gown',13500)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="product image/gown3 13500.jpeg">
+            <h3>Quality gown</h3>
+            <p>₦13500</p>
+            <button onclick="addToCart('Quality gown',13500)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="product image/lingaries 7450.jpeg">
+            <h3>Quality lingeries</h3>
+            <p>₦7450</p>
+            <button onclick="addToCart('Quality lingeries',7450)">Add to order</button>
+        </div>
+
+         <div class="product">
+            <img src="product image/house wear1 8500.jpeg">
+            <h3>House Wear</h3>
+            <p>₦8500</p>
+            <button onclick="addToCart('House Wear',8500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/house wear 10800.jpeg">
+            <h3>House Wear</h3>
+            <p>₦8500</p>
+            <button onclick="addToCart('House Wear',10800)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/house wear2 xxl.jpeg">
+            <h3>House Wear</h3>
+            <p>₦8500</p>
+            <button onclick="addToCart('House Wear',8500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="product image/singlet 8800.jpeg">
+            <h3>Quality Singlet</h3>
+            <p>₦8800</p>
+            <button onclick="addToCart('Quality Singlet',8800)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="ralph singlet.jpeg">
+            <h3>Quality Ralph Polo Singlet</h3>
+            <p>₦12,500</p>
+            <button onclick="addToCart('Quality Ralph Polo Singlet',12500)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="sexy fuck toy.jpeg">
+            <h3>Sexy Fuck Toy</h3>
+            <p>₦5,000</p>
+            <button onclick="addToCart('Sexy Fuck Toy',5000)">Add to order</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Cart Sidebar -->
+
+<!-- Cart Overlay -->
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+<!-- Cart Sidebar -->
+<div class="cart" id="cart">
+    <div class="cart-header">
+        <h2>Your Order</h2>
+        <span class="close-cart" onclick="toggleCart()"><b style="color: red;">✖</b></span>
+    </div>
+
+    <ul id="cart-items"></ul>
+
+    <div class="cart-footer">
+        <h3>Total: ₦<span id="total">0</span></h3>
+        <button onclick="checkout()">Checkout via WhatsApp</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+<!--
+
+    <div class="product">
+        <video autoplay muted loop playsinline width="100%">
+            <source src="product image/condom boxers video 5900.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h3> Condom Boxers</h3>
+             <p>₦5900</p>
+            <button onclick="addToCart('Condom Boxers',5900)">Add to order</button>
+    </div>
+
+         <div class="product">
+           <video autoplay muted loop playsinline>
+              <source src="waist strainer video.mp4" type="video/mp4">
+           </video>
+
+         </div>
+
+          <div class="product">
+             <video autoplay muted loop playsinline>
+         <source src="bra video.mp4" type="video/mp4">
+            </video>
+
+      </video>
+        </div>
+
+
+-->
+</body>
+</html>

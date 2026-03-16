@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oyinkansola Closet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <img src="yinkasola_Logo.jpeg" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Every Lady Deserves To Feel Sexy</h1>
+    <a href="shop.html" class="btn">Shop Now</a>
+</section>
+
+<!-- Shop Section -->
+<section id="shop" class="shop">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="product">
+            <img data-src="luxury_lingeries.jpeg" class="lazy-image" alt="">
+
+            <h3>Luxury Lingerie</h3>
+            <p>₦15,000</p>
+            <button onclick="addToCart('Luxury Lingerie',15000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img data-src="sexy_sleep_wear.jpeg" class="lazy-image" alt="">
+            <h3>Sexy Sleepwear</h3>
+            <p>₦18,000</p>
+            <button onclick="addToCart('Sexy Sleepwear',18000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="waist_strainer.jpeg">
+            <h3>Waist Trainer</h3>
+            <p>₦28,000</p>
+            <button onclick="addToCart('Waist Trainer',28000)">Add to order</button>
+        </div>
+
+        <div class="product">
+            <img src="Towel_robe.jpeg">
+            <h3>Towel Robe</h3>
+            <p>₦20,000</p>
+            <button onclick="addToCart('Towel Robe',20000)">Add to order</button>
+        </div>
+
+        
+    </div>
+</section>
+<br>
+ <a href="shop.html" class="btn">Shop More</a>
+<br>
+<!-- Banner Section -->
+<section class="banner">
+    <img src="oyinkasolaBanna.jpeg" alt="Oyinkansola Closet Banner" class="banner-img">
+    <div class="banner-text">
+        <h2>Your Premium Lingerie Brand</h2>
+        <p>Every Lady Deserves To Feel Sexy</p>
+        <div class="contact-numbers">
+            <a href="https://wa.me/2349039375422" target="_blank" class="whatsapp-link">
+                📱 WhatsApp: 09039375422
+            </a>
+            <span> | </span>
+            <a href="tel:09067236832">📞 09067236832</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Cart Sidebar -->
+
+<!-- Cart Overlay -->
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+<!-- Cart Sidebar -->
+<div class="cart" id="cart">
+    <div class="cart-header">
+        <h2>Your Order</h2>
+        <span class="close-cart" onclick="toggleCart()"><b style="color: red;">✖</b></span>
+    </div>
+
+    <ul id="cart-items"></ul>
+
+    <div class="cart-footer">
+        <h3>Total: ₦<span id="total">0</span></h3>
+        <button onclick="checkout()">Checkout via WhatsApp</button>
+    </div>
+</div>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 09039375422 | 09067236832</p>
+</section>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/2349039375422" class="whatsapp" target="_blank">
+    💬
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

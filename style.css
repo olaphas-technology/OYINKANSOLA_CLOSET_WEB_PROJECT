@@ -1,0 +1,422 @@
+
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-erif;
+}
+
+   body {
+    background: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 15px 5%;
+     background: linear-gradient(90deg, #000 0%, #ff1493 100%);
+    color: #fff;
+    border-bottom: 2px solid #ff1493; /* Hot pink line */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border-bottom: 1px solid #eee;/*
+
+    /* Safe Fixed Header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+  
+  padding-top: 80px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.banner {
+    text-align: center;
+    padding: 40px 20px;
+    background: #000;
+    color: #fff;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.banner-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ff0080;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-numbers a {
+    color: #25D366; /* WhatsApp green */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact-numbers a:hover {
+    color: #ff0080;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cart-icon {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #ff0080, #800040);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 70px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.btn {
+    background: white;
+    color: #ff0080;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+/* SHOP */
+.shop {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.product {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 15px 0 5px;
+}
+
+.product button {
+    background: #ff0080;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Cart item animation */
+#cart-items li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideInItem 0.4s forwards;
+}
+
+/* Stagger animation */
+#cart-items li:nth-child(1) { animation-delay: 0.05s; }
+#cart-items li:nth-child(2) { animation-delay: 0.1s; }
+#cart-items li:nth-child(3) { animation-delay: 0.15s; }
+#cart-items li:nth-child(4) { animation-delay: 0.2s; }
+#cart-items li:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes slideInItem {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* CART */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.18, 1);
+    box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+
+.cart.active {
+    right: 0;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===================== */
+/* CART SIDEBAR */
+/* ===================== */
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.cart.active {
+    right: 0;
+}
+
+/* Cart Header */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+.close-cart {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Cart Items */
+#cart-items {
+    flex: 1;
+    padding: 20px;
+    list-style: none;
+    overflow-y: auto;
+}
+
+#cart-items li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Cart Footer */
+.cart-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.cart-footer button {
+    width: 100%;
+    padding: 12px;
+    background: #ff0080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-footer button:hover {
+    background: black;
+}
+
+/* ===================== */
+/* RESPONSIVE DESIGN */
+/* ===================== */
+
+/* Large screens */
+@media (min-width: 1400px) {
+    .cart {
+        width: 400px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .cart {
+        width: 300px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .cart {
+        width: 100%;
+        right: -100%;
+    }
+
+    .cart.active {
+        right: 0;
+    }
+}
+
+/* ------------------ */
+/* RESPONSIVE DESIGN  */
+/* ------------------ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        height: 10%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        
+        padding: 70px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .cart {
+        width: 100%;
+    }
+}
+
+/* Small Phones */
+@media (min-width: 300px) {
+    .hero h1 {
+        font-size: 22px;
+    }
+header {
+    height:20% ;
+}
+    .btn {
+        padding: 10px 20px;
+    }
+}
