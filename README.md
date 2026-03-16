@@ -69,7 +69,8 @@ Planned enhancements for the project include:
 
 ## 📸 Preview
 
-product image/home_page_preview.jpeg
+![home_page_preview](https://github.com/user-attachments/assets/99d8f7e8-40e9-483f-9459-62c32beca339)
+
 
 ---
 
